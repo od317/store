@@ -1,0 +1,874 @@
+body{
+    overflow-x: hidden;
+}
+
+.min{
+    display: none;
+}
+
+.main_first{
+position: relative;
+width: 100vw;
+height: 50vh;
+
+}
+
+.grid_sec{
+    width: 100vw;
+    display: flex;
+    justify-items: center;
+}
+
+
+.carousel{
+    width: 100%;
+    transition: 0.5 ease-in-out;
+}
+
+.carousel-item{
+    position: relative;
+    padding: 2rem;
+}
+
+
+.car_buttons{
+    height: 100%;
+    position:absolute;
+    padding: 1rem;
+    width: 100%;
+}
+
+
+.car_button_con{
+    width: 100%;
+    height: 94%;
+    padding-right: 5rem;
+}
+
+
+.car_button_con button{
+    margin-left: 1rem;
+    text-align: center;
+    background-color: transparent;
+    border:none;
+}
+
+.car_button_con button ion-icon{
+    font-size: 1rem;
+    color:white;
+}
+
+.main-header-grid{
+    position: relative;
+    width: 65%;
+    height: 80%;
+    display: grid;
+    grid-template-columns:  75% 8% 30% 10% 30%;
+    grid-template-areas: 
+    "  img1  .  img3 . img2"
+    "  gsec gsec gsec gsec gesc";
+    
+}
+
+.main-header-grid .img1{
+  grid-area: img1;
+  height: 65vh;
+  max-height: 100%;
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.main-header-grid .img2{
+    grid-area: img2;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .main-header-grid .img3{
+    grid-area: img3;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+.gsec{
+    grid-area: gsec;
+    margin-bottom: 2rem;  
+    color: white;
+    margin-top: 1rem;
+    font-size: 110%;
+    z-index: 100;
+
+}
+
+.gsec button {
+    border: none;
+    outline: none;
+    font-size: 70%; 
+    z-index: 100;
+}
+
+
+.grid_sec{
+    background-color:transparent;
+    padding:0 6rem 6rem 6rem;
+    width: 100vw;
+    color: black;
+    position: relative;
+
+}
+
+
+.grid-butts{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-left: .5rem;
+    padding:0 6rem 0rem 6rem;
+}
+
+
+.grid-butts button{
+    border: none;
+    outline: none;
+    padding: .6rem;
+    border-radius: 10px;
+    width: 25%;
+    font-weight: 500;
+    transition: .4s ease-in-out;
+}
+
+.activedark{
+  background-color: var(--dark2);
+  color: white;
+}
+
+
+.activelight{
+    background-color: var(--light1);
+    color: white;
+  }
+
+.sec_grid_f{
+    position: relative;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    width: 24%;
+    height: 100%;
+    display: grid;    
+    grid-template-columns:  100%;
+}
+
+.sec_grid_f .sec_grid_img{
+    position: relative;
+    overflow: hidden;    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 1rem;    
+}
+
+.sec_grid_f .sec_grid_img img{
+    width: 100%;
+}
+
+
+.main-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.main-footer .link {
+    color: black;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+}
+
+.main-footer .link:hover {
+    color: white;
+    background-color: var(--light1);
+}
+
+.card_hov{
+    position:absolute;
+    color:white;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.05085784313725494) 0%, rgba(0,0,0,0.47942927170868344) 0%);
+    width: 100%;
+    transform: translateY(-100%);
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    transition: 0.5s ease-in-out;
+    padding: .5rem;
+    opacity: 0;
+}
+
+.sec_grid_img:hover .card_hov{
+    opacity: 100%;
+}
+
+.sec_grid_img:hover .card_hov button{
+   display: block;
+}
+
+.sec_grid_img:hover .card_hov label{
+    display: block;
+ }
+ 
+
+.card_hov label{
+    display: none;
+}
+
+.card_hov button{
+
+    border: none;
+    outline: none;
+    display: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: .4rem;
+    width: 40%;
+}
+
+
+
+.main_bf{
+    margin-top: 65vh;
+    display: grid;
+    position: relative;
+    grid-template-columns:50% 45%;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.main_bf .text{
+    padding: 2rem;
+    margin-left: 5rem;
+    padding-top:5rem ;
+    color:black;
+}
+
+.main_bf .img_cont_bf{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.img_cont_bf img{
+  height: 60%;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.img_cont_bf .abs_img{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position:absolute;
+    width: 30%;
+    height: 30%;
+    z-index: 1;
+    transform: translateY(140%) translateX(-90%);
+}
+
+
+.main_bf .text .large_text{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+
+.navbar-main{
+    margin-bottom: 0rem;
+    color: white;
+}
+
+.navbar-main .theme-button{
+    margin-right: 3rem;
+}
+
+.navbar-main-dark{
+    background-color: var(--dark1);
+}
+
+.navbar-main-light{
+    background-color: var(--light1);
+}
+
+.carousel-dark{
+    background-color: var(--dark1);
+}
+
+.carousel-light{
+    background-color: var(--light1);
+}
+
+.main_all-dark{
+    background-color: var(--dark5);
+}
+
+.main_all-light{
+    background-color: var(--light3);
+}
+
+
+.main_bf .text2-dark{
+    color: white;
+}
+
+.main_bf .text2-light{
+    color: black;
+}
+
+.main-footer-light  .link{
+    color: black;
+}
+
+.main-footer-dark  .link:hover{
+    color: white;
+    background-color: var(--dark1);
+}
+
+
+.grid-buttns{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width:690px) {
+
+
+
+.min{
+    display: block;
+}
+
+
+.grid_sec{
+    background-color:transparent;
+    padding:0;
+    width: 100vw;
+    color: black;
+    margin-top: 0;
+    position: relative;
+
+}
+
+.sec_grid_f{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    display: grid;    
+    grid-template-columns:  100%;
+    margin-right: .1rem;
+}
+
+.sec_grid_f .sec_grid_img{
+    position: relative;
+    overflow: hidden;    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: .3rem;    
+}
+
+.sec_grid_f .sec_grid_img img{
+ height: 100%;
+}
+
+.sec_grid_img:hover .card_hov{
+    opacity:0;
+}
+
+.sec_grid_img:hover .card_hov button{
+   display:none;
+}
+
+.sec_grid_img:hover .card_hov label{
+    display:none;
+ }
+
+ .grid-butts{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-left: 0;
+    margin-bottom: .4rem;
+    padding:.5rem .5rem 0 0;
+}
+
+ .grid-butts button{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    font-weight: 500;
+    transition: .4s ease-in-out;
+}
+
+
+.min-header-main{
+width: 100vw;
+height: 45vh;
+}
+
+.min-main-sec-text-but{
+    transform: translateY(-46%);
+    background-color: var(--dark5);
+    width: 100vw;
+    height: 10vh;
+    background-color:var(--dark5);
+    display: flex;
+    border-radius:90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.but-text-cont{
+    padding: 2rem;
+    transform: translateY(-30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.but-text-cont .large-text{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+.but-text-cont .small-text{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: .5rem;
+    text-align: center;
+}
+
+
+.but-text-cont .link{
+
+padding: .7rem;
+width: 30%;
+margin-top: 1rem;
+border-radius: 10px;
+font-size: 1.2rem;
+border: none;
+outline: none;
+color:white;
+background-color:var(--light1);
+text-align: center;
+text-decoration: none;
+}
+
+.color{
+    color:var(--light1);
+    display: inline-block;
+}
+
+.min-header-main-f{
+    background-image:url('https://media.news.de/images/857767080/images/54/e7/d56389e6d3cbbb61f5e24ea0fadb/nopic/no_pic/1200/675/1/1/-/4/1024/576/-/-/bis-oktober-gibts-glamour-shopping-week-rabatte-symbolfoto_857767080_1200x675_29aff29a845d07e9ad9d1f71223a5130.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.min-main-sec-text-but--dark{
+
+   background-color: var(--dark5);
+
+}
+
+
+.min-main-sec-text-but-light{
+
+    background-color: var(--light3);
+ 
+ }
+ 
+
+
+.min-header-main-t{
+    background-image:linear-gradient(90deg, rgba(0,0,0,0.05085784313725494) 0%, rgba(0,0,0,0.4682247899159664) 0%),url('https://i0.wp.com/nasilemaktech.com/wp-content/uploads/2021/01/Samsung-Galaxy-S21-Ultra-preview-1.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+.min-header-grid{
+    width: 100vw;
+    display: grid;
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+    grid-template-columns: 30vw 25vw 25vw 20vw;
+    grid-template-areas:
+    'small large large large'
+    'small2 large large large';
+} 
+
+.min-header-grid-t{
+    width: 100vw;
+    height: 60vh;
+    display: grid;
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-areas:
+    'larget larget larget2 larget2'
+    'larget larget larget3 larget4'
+    'smallt larget5 larget5 larget5';
+
+}
+
+
+.min-header-grid-t .smallt{
+
+    grid-area: smallt;
+    background: url('https://c0.wallpaperflare.com/preview/325/23/780/backlit-blur-close-up-dark-thumbnail.jpg');
+    background-size: cover;
+    background-position:center;
+}
+
+
+.min-header-grid-t .larget5{
+    grid-area: larget5;
+    background: url('https://digitalmagazine.org/wp-content/uploads/2022/06/How-To-Set-Different-Wallpapers-On-Dual-Monitors-Windows-10.jpg');
+    background-size: cover;
+    background-position:center;
+
+}
+
+
+.min-header-grid-t .larget{
+    grid-area: larget;
+    background: url('https://thumbs.dreamstime.com/b/gaming-pc-rgb-led-lights-computer-assembled-hardware-components-rgb-colors-gaming-computer-185705787.jpg');
+    background-size: cover;
+    background-position:center;
+}
+
+.min-header-grid-t .larget2{
+    grid-area: larget2;
+    background: url('https://globalcomputers.pk/wp-content/uploads/2021/09/michelle-ding-c7yBhz9XTIs-unsplash.jpg');
+    background-size: cover;
+    background-position:center;
+}
+
+.min-header-grid-t .larget3{
+    grid-area: larget3;
+    background: url('https://m.media-amazon.com/images/S/mms-media-storage-prod/final/BrandPosts/brandPosts/348ca1ef-5e30-410a-861e-961fc2a6e979/396600aa-6cff-4c84-82cb-a2a020b6c98b/media._SL480_.jpeg');
+    background-size: cover;
+    background-position:center;
+}
+
+.min-header-grid-t .larget4{
+    grid-area: larget4;
+    background: url('https://i.ytimg.com/vi/YwdvV0EYRpg/maxresdefault.jpg');
+    background-size: cover;
+    background-position:center;
+}
+
+
+.min-header-grid-ff{
+    display: grid;
+    height: 60vh;
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+    grid-template-columns:60vw 40vw ;
+    grid-template-areas:
+    'l1 h1'
+    'l2 h1'
+    'l3 l3'
+
+}
+
+.min-header-grid-ff .h1{
+    grid-area: h1;
+    height: 100%;
+    background: url('https://i.etsystatic.com/24030939/r/il/ecbfe8/4007497222/il_fullxfull.4007497222_foxs.jpg');
+    background-size: cover;
+    background-position:right;
+}
+
+
+.min-header-grid-ff .l1{
+    grid-area: l1;
+    background: url('https://cdn.grbj.com/wp-content/uploads/sites/143/2020/09/Loves-Furniture.jpeg');
+    background-size: cover;
+    background-position:center;
+}
+
+.min-header-grid-ff .l2{
+    grid-area: l2;
+    background: url('https://elledecor.in/wp-content/uploads/2022/03/H6_KIDS-ROOM.jpg');
+    background-size: cover;
+    background-position:center;
+}
+
+.min-header-grid-ff .l3{
+    grid-area: l3;
+    background: url('https://www.riverpoolsandspas.com/hubfs/in-pool%20furniture%20tanning%20ledge%20chairs.jpg');
+    background-size: cover;
+    background-position:center;
+}
+
+.min-header-grid2{
+    width: 100vw;
+    display: grid;
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+    grid-template-columns: 20vw 20vw 25vw 35vw;
+    grid-template-areas:
+    'large large large small'
+} 
+
+
+.min-header-grid2 .large{
+    height: 30vh;
+    grid-area: large;
+}
+
+
+.min-header-grid2 .small{
+    height: 30vh;
+    grid-area: small;
+ 
+}
+
+
+.min-header-grid .large{
+    grid-area: large;
+    background-size: cover;
+    background-position:center;
+}
+
+
+.min-header-grid .small{
+    background-size: cover;
+    background-position:center;
+    grid-area:small;
+    height: 45vw;
+}
+
+.gird1-main-min-f .large{
+    background: url('https://thumbs.dreamstime.com/b/fashion-model-fashionable-clothes-beautiful-woman-near-wall-sexy-elegant-stylish-fall-shirt-scarf-trousers-sweater-shoes-bag-79059996.jpg');
+    background-size: cover;
+    background-position:center;
+}
+
+.gird1-main-min-f .small{
+    background:url('https://images.unsplash.com/photo-1607606780078-eb06bd04a574?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&w=1000&q=80');
+    background-size: cover;
+    background-position:center;
+}
+
+.gird1-main-min-f .small2{
+    background: url('https://i.pinimg.com/736x/54/8d/25/548d25216e6b405515f00c8514d666ad.jpg');
+    background-size: cover;
+    background-position:center;
+}
+
+
+
+.min-header-grid .small2{
+    grid-area:small2;
+    height: 45vw;
+}
+
+
+
+.gird2-main-min-f .large{
+    background: url('https://thumbs.dreamstime.com/b/beauty-model-girl-posing-trendy-fashionable-spring-clothes-wear-apparel-beautiful-young-brunette-woman-outfit-fashion-197285729.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.gird2-main-min-f .small{
+    background: url('https://st2.depositphotos.com/2944823/5641/i/950/depositphotos_56416293-stock-photo-beautiful-ladylike-woman-in-elegant.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+.gird1-main-min-t .large{
+    background: url('https://thumbs.dreamstime.com/b/gaming-pc-rgb-led-lights-computer-assembled-hardware-components-rgb-colors-gaming-computer-185705787.jpg');
+    background-size: cover;
+    background-position:center;
+}
+
+.gird1-main-min-t .small{
+    background:url('https://images.unsplash.com/photo-1586712308574-566bd05e816e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&w=1000&q=80');
+    background-size: cover;
+    background-position:center;
+}
+
+.gird1-main-min-t .small2{
+    background: url('https://m.media-amazon.com/images/S/mms-media-storage-prod/final/BrandPosts/brandPosts/348ca1ef-5e30-410a-861e-961fc2a6e979/396600aa-6cff-4c84-82cb-a2a020b6c98b/media._SL480_.jpeg');
+    background-size: cover;
+    background-position:center;
+}
+
+
+
+
+.gird2-main-min-t .large{
+    background: url('https://globalcomputers.pk/wp-content/uploads/2021/09/michelle-ding-c7yBhz9XTIs-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.gird2-main-min-t .small{
+    background: url('https://i.ytimg.com/vi/YwdvV0EYRpg/maxresdefault.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.min-header-flex{
+    padding-left: 1rem;
+    color:white;
+    display: flex;
+    flex-direction: column;
+}
+
+.min-header-flex .cart-icon{
+    margin-bottom: 1rem;
+    font-size: 150%;
+    padding: .3rem;
+    padding-right: .37rem;
+    border-radius: 50%;
+}
+
+.min-header-flex ion-icon{
+    transition: .5s ease-in-out;
+}
+
+.cart-icon-{
+    color: white;
+
+}
+
+.cart-icon-active{
+
+    background: linear-gradient(90deg, rgba(0,0,0,0.05085784313725494) 0%, rgba(255,255,255,0.7791491596638656) 0%);
+    color:black;
+   
+}
+
+
+
+.min-header-main{
+    min-height: 200px;
+}
+
+
+
+.mid-main{
+    width: 100vw;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    padding-left: 2rem;
+}
+
+
+.img-cont-min-main{
+display: flex;
+margin-bottom: 5rem;
+border-radius: 50%;
+display: inline-block;
+margin-top: 3rem;
+}
+
+.img-cont-min-main img{
+    width: 60vw;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.text-cont-min-main{
+    color: white;
+    position:absolute;
+    background-color: var(--dark1);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(130%) translateX(100%);
+}
+
+
+.min-header-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.min-header-main .title{
+    color:white;
+    font-size: 2rem;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 0 1rem 0 1rem;
+    z-index: 100;
+}
+
+
+.gird-title{
+ margin-left: .5rem;
+ margin-top: 3rem;
+ margin-bottom:1rem;
+ font-size: 1.5rem;
+ padding: .5rem;
+ color:black;
+}
+
+
+.gird-title-dark{
+    color:white;
+}
+
+.see-more{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    border-radius: 9px;
+}
+
+
+.max{
+    display: none;
+}
+}

@@ -1,0 +1,22 @@
+POST http://localhost:3500/register
+Content-Type: application/json
+
+{
+    "email":"osamadrbas3eqd14631@gmail.com",
+    "password":"123"
+}
+
+###
+
+POST http://localhost:3500/login
+Content-Type: application/json
+
+{
+    "email":"osamadrbas3eqd14631@gmail.com",
+    "password":"123"
+}
+
+###
+
+GET http://localhost:3500/auth
+Authorization:  JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1MCwidXNlcl9lbWFpbCI6Im9zYW1hZHJiYXMzZXFkMTQ2MzFAZ21haWwuY29tIiwiaXNfYWN0aXZlIjoxLCJ1c2VyX3R5cGUiOjAsImlhdCI6MTY2ODcwMjg3NH0.aV3kYK7LpTonvx1rrYkj5aOz62E6PoUDPA6rsUXf5PE
