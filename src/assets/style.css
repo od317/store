@@ -65,7 +65,7 @@ body{
       align-items: center;
       padding-left: 5%;
       padding-right: 3%;
-      padding-bottom: 20%;
+      padding-bottom: 80%;
       gap: 5%;
       grid-template-columns: 30% 30% 30%;
   }
@@ -285,6 +285,7 @@ body{
   .fixed-cont{
     display: grid;
     width: 100%;
+    height: fit-content;
     grid-template-columns: 20% 80% 0% 0%;
     grid-template-areas: 
     "header header header header"
